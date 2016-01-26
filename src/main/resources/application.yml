@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    platform: hsqldb
+    url: jdbc:hsqldb:mem:order_management
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+
+  jpa:
+    database-platform: org.hibernate.dialect.HSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.dao.support: DEBUG
